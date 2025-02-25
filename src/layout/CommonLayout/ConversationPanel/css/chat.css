@@ -1,0 +1,278 @@
+/* Mtak Begin */
+.conversation-panel .friend-section .friend-list #ConversationPanelCloseFriendUlId
+{
+  position: relative;
+}
+
+.conversation-panel .friend-section .friend-list #ConversationPanelCloseFriendUlId .friend-box.offline::after {
+  content: '';
+  position: absolute;
+  height: 0.6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  left: 0;
+  top: -0.2rem;
+  background-color: rgb(255 , 44 ,37);
+}
+
+.conversation-panel .friend-section .friend-list #ConversationPanelCloseFriendUlId .friend-box.online::after {
+  content: '';
+  position: absolute;
+  height: 0.6rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  left: 0;
+  top: -0.2rem;
+  background-color: rgb(43 , 198 ,12);
+}
+
+.conversation-panel .friend-section .friend-list #ConversationPanelCloseFriendUlId .friend-box .message_count {
+  position: absolute;
+  min-width: 1.2rem;
+  border-radius: 50%;
+  right: -0.4rem;
+  top: -0.5rem;
+  background-color: rgb(255 , 44 ,37);
+  color: white;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-weight: bold;
+  padding: 0 0.2rem;
+}
+
+.conversation-panel #ChatBoxCommon{
+  width: 26rem;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body
+{
+  display: flex;
+  flex-direction: column;
+  gap:0.6rem;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg
+{
+ padding: 0.8rem;
+ flex-grow: 1;
+ position: relative;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg .top_right_action
+{
+  position: absolute;
+  right: 0.8rem;
+  top: 0.8rem;
+  background: transparent;
+  display: flex;
+  flex-direction: row;
+  gap:0.5rem;
+  font-size: 1rem;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg .new_span{
+  position: absolute;
+  right:-0.4rem;
+  top:-0.4rem;
+  border-radius: 50%;
+  background-color: red;
+  color:white;
+  font-weight: bold;
+  padding: 0.1rem 0.3rem;
+  display:none;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-leftt{
+  align-self: start;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-rightt{
+  align-self: end;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .user_image{
+  border-radius: 50%;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-rightt{
+  position: relative;
+  background: rgba(var(--theme-light), 1);
+  min-height: 10px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  border-radius: 5px;
+  word-break: break-all;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-leftt{
+  position: relative;
+  background: rgba(var(--black), 0.05);
+  min-height: 10px;
+  margin-bottom: 5px;
+  margin-right: 0px;
+  border-radius: 5px;
+  word-break: break-all;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-leftt::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-right: 15px solid rgba(var(--black), 0.05);
+  border-top: 2px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  top: 50%;
+  left: -15px;
+  transform: translateY(-50%);
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-rightt::after{
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 15px solid rgba(var(--theme-light), 1);
+  border-top: 2px solid transparent;
+  border-bottom: 15px solid transparent;
+  position: absolute;
+  top: 50%;
+  right: -15px;
+  transform: translateY(-50%);
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg .send_date
+{
+  font-size: 0.6rem;
+  font-weight: bold;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-rightt .send_date{
+  text-align: right;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg.msg-leftt .send_date{
+  text-align: right;
+}
+
+.conversation-panel #ChatBoxCommon .chatFilePreviewDiv{
+  width : 100%;
+  margin: 1rem 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conversation-panel #ChatBoxCommon .chatFilePreviewDiv .progress{
+  width:9rem;
+}
+
+.conversation-panel #ChatBoxCommon .chatFilePreviewDiv .containerr{
+  position: relative;
+  width: 10rem;
+  padding: 1rem;
+  background: #f2f2f2;
+  border: 0.3rem solid #424242;
+  border-radius: 0.5rem;
+}
+
+.conversation-panel #ChatBoxCommon .chatFilePreviewDiv .containerr .iconX
+{
+  font-size: 1rem;
+  font-weight: bold;
+  color: red;
+  display: inline-flex;
+  height: 1.5rem;
+  aspect-ratio: 1/1;
+  border: 0.2rem solid black;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  background: inherit;
+  cursor: pointer;
+}
+
+.conversation-panel #ChatBoxCommon .chatFilePreviewDiv .containerr ._img{
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1/1;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-footer .options .option_ul .file_type_li
+{
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-footer .options .option_ul .file_type_li ._label
+{
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conversation-panel #ChatBoxCommon .no_style_button{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: inherit;
+  line-height: 0;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-footer .chat_input
+{
+  font-size: 1rem;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg .image_div 
+{
+  display: inline-block;
+  background: #f2f2f2;
+  border: 0.3rem solid #919191;
+}
+
+.conversation-panel #ChatBoxCommon .chat-wrap .chat-body .msg .image_div .chat_img
+{
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+  background: white;
+}
+
+#ChatBoxCommonImageViewModalHtmlId .modal-content{
+  background: transparent;
+}
+
+#ChatBoxCommonImageViewModalHtmlId .modal-content .modal-header .btn-close{
+  color:white;
+}
+
+#ChatBoxCommonImageViewModalHtmlId .modal-content .image_div{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#ChatBoxCommonImageViewModalHtmlId .modal-content .image_div .image{
+  height: inherit;
+  object-fit: contain;
+}
+
+.conversation-panel .offline_status{
+  background-color: rgb(255 , 44 ,37);
+}
+
+.conversation-panel .online_status{
+  background-color: rgb(43 , 198 ,12);
+}

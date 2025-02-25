@@ -1,0 +1,63 @@
+# -----------------------------------------------------------------------------
+# App
+# -----------------------------------------------------------------------------
+BASEPATH=
+NEXT_PUBLIC_APP_URL=http://localhost:3001${BASEPATH}
+
+
+# Secret key used by next-auth for signing and encrypting tokens.
+# Generate a new secret using: openssl rand -base64 32
+NEXTAUTH_SECRET="NoVQgccCBpirJHUToEdpSHMxuj71MTyaJFo40M3feME="
+
+# Base URL of the application (use your production URL in deployment).
+# When developing locally, set this to your localhost URL along with the port number.
+# For example: 
+# - Development: http://localhost:3000 (default Next.js port)
+# - Production: https://yourdomain.com (replace with your live domain)
+NEXTAUTH_URL="http://localhost:3001"
+#NEXTAUTH_BASEPATH=${BASEPATH}/api/auth
+#NEXTAUTH_URL=http://localhost:5000${BASEPATH}/api/auth
+
+
+# Google OAuth credentials for Google login (add your own client ID and secret)
+#You can obtain these values by creating OAuth credentials in the Google Cloud Console
+#GOOGLE_CLIENT_ID=64122837494-ih44majln08b6qkgisf7brgkfma8d4ji.apps.googleusercontent.com 
+#GOOGLE_CLIENT_SECRET=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 
+GOOGLE_CLIENT_ID=111032108713-ibmotkc7pp60eh0cne05nvdqmlk6rv3o.apps.googleusercontent.com
+GOOGLE_CLIENT_SECRET=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
+# For more information, please refer to the documentation: https://docs.pixelstrap.net/next/friendbook/
+
+# -----------------------------------------------------------------------------
+# Database
+# -----------------------------------------------------------------------------
+DATABASE_URL=
+
+# -----------------------------------------------------------------------------
+# API
+# -----------------------------------------------------------------------------
+API_URL=http://localhost:3001${BASEPATH}/api
+NEXT_PUBLIC_API_URL=${API_URL}
+
+MYSQL_HOST=192.168.2.5
+MYSQL_PORT=3306
+MYSQL_DATABASE=nostalgiapages_stage_db
+MYSQL_USER=root
+MYSQL_PASSWORD='Qaz123wsx@123Qaz'
+
+# -----------------------------------------------------------------------------
+# Port Configuration
+# -----------------------------------------------------------------------------
+PORT=3001
+
+# -----------------------------------------------------------------------------
+# Images Urls and Paths
+# -----------------------------------------------------------------------------
+IMG_URL=http://localhost:3001${BASEPATH}/images
+YEARBOOK_IMG_URL=${IMG_URL}/year_book
+USER_IMG_URL=${IMG_URL}/user
+USER_CHAT_IMG_URL=${IMG_URL}/user_chats
+
+UPLOAD_IMG_PATH=public/images
+UPLOAD_YEARBOOK_IMG_PATH=${UPLOAD_IMG_PATH}/year_book
+UPLOAD_USER_IMG_PATH=${UPLOAD_IMG_PATH}/user
+UPLOAD_USER_CHAT_IMG_PATH=${UPLOAD_IMG_PATH}/user_chats

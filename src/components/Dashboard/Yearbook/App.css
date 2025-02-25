@@ -1,0 +1,40 @@
+.testimonials .nav-tabs .nav-item .nav-link{
+    padding:16px 2px !important;    
+    background-color: transparent;    
+    font-weight: 600;
+    color:rgba(var(--font-color), 1);    
+    display: flex;    
+    
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-right: 1px solid #e6e9ec !important;   
+    border-top-left-radius: 0.19rem !important; 
+    border-top-right-radius: 0.19rem  !important;
+}
+
+.testimonials .nav-tabs .nav-item  .active{    
+    border-bottom: 2px solid rgba(var(--theme-color), 1) !important;     
+    background-color: rgba(var(--theme-light), 1);  
+}
+
+.testimonials .nav-tabs .nav-item .nav-item:last-child{
+    border-right:none
+}
+
+@media only screen and (max-width: 575px) {
+    .nav-link {
+        font-size: 0;
+    }
+    .nav-link svg{
+        display: none;
+    }
+}
+@media only screen and (max-width: 767px) {
+     .nav-link {
+        font-size: 12px;
+    }
+    .nav-link svg{
+        display: none;
+    }
+}

@@ -1,0 +1,152 @@
+#DashboardCreatePostDivId
+{
+  position: relative;
+}
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div{
+  border: 2px dashed #007bff;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  /* margin: 20px auto; */
+}
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div .preview_container
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+} 
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div .preview_container .preview_item{
+  margin: 0.5rem;
+  border: 2px solid #ddd;
+  padding: 0.4rem;
+  border-radius: 0.2rem;
+  position: relative;
+  box-shadow: 0 0 0.4rem #bfbfbf;
+}
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div .preview_container .preview_item .imgg{
+  width: 5rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div .preview_container .preview_item .remove_file{
+  position: absolute;
+  line-height: 0;
+  border: 0.15rem solid red;
+  border-radius: 50%;
+  height: 1.2rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: -0.5rem;
+  right: -0.5rem;
+  font-size: 0.6rem;
+  background: white;
+}
+
+#DashboardCreatePostDivId .no_style_button{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: inherit;
+  line-height: 0;
+}
+
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div .drop_file_msg{
+  color: gray;
+  font-size: 1.2rem;
+  margin: 0.6rem 0;
+}
+
+#DashboardCreatePostDivId .album_dropzone .dropzone_div .file_desc{
+  color: red;
+}
+
+#DashboardCreatePostDivId .create-bg .input-sec .close-icon {
+  top: -0.5rem;
+  right: -0.5rem;
+  border: 2px solid red;
+  border-radius: 50%;
+  height: 1.2rem;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+#DashboardCreatePostDivId .messageTextAreaDiv{
+  position: relative;
+}
+
+#DashboardCreatePostDivId .messageTextAreaDiv .emojiDiv{
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+
+#DashboardCreatePostDivId .messageTextAreaDiv .messageTextArea
+{
+  resize: none;
+  height: 5rem;
+}
+
+#DashboardCreatePostDivId .messageTextAreaDiv .EmojiPickerReact 
+{
+  z-index: 1000;
+  top:3rem;
+}
+
+#DashboardCreatePostDivId .messageTextAreaDiv .emoji_picker_button.active svg {
+  stroke: #e6b112 !important;
+}
+
+#DashboardCreatePostDivId .create-bg .bg-post .emojiDiv .emoji_picker_button{
+  margin-left: 0.5rem;
+}
+
+#DashboardCreatePostDivId .create-bg .bg-post .emojiDiv 
+{
+  position: relative;
+}
+
+#DashboardCreatePostDivId .create-bg .bg-post .emojiDiv .emoji_picker_button.active svg{
+  stroke: #e6b112 !important;
+}
+
+#DashboardCreatePostDivId .create-bg .bg-post .emojiDiv .EmojiPickerReact{
+  z-index: 1000;
+  top:3rem;
+}
+
+
+#DashboardCreatePostDivId .loader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.5;
+}
+
+#DashboardCreatePostDivId .tagFriendDiv .d_title{
+  color : rgb(100,117,137);
+  margin: 0.25rem 0;
+}
+
+#DashboardCreatePostDivId .privateUsersDiv .d_title{
+  color : rgb(100,117,137);
+  margin: 0.25rem 0;
+}
